@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* src/HeatmapTable.css */
+
+.skill-label,
+.student-label {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cell {
+  cursor: pointer;
+}
+
+.cell:hover {
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.cell-text {
+  font-family: Arial, sans-serif;
+  pointer-events: none;
+}
+
+
+
+/* src/App.css */
+.no-list-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
