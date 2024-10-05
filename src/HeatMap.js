@@ -230,13 +230,13 @@ const HeatmapTable = ({ students, removeStudent }) => {
                 .style('opacity', 1);
             }
 
-            setTooltip({
-              visible: true,
-              x: 0, // Will be set in 'mousemove'
-              y: 0,
-              content: content,
-              type: 'cell',
-            });
+            // setTooltip({
+            //   visible: true,
+            //   x: 0, // Will be set in 'mousemove'
+            //   y: 0,
+            //   content: content,
+            //   type: 'cell',
+            // });
           })
           .on('mousemove', (event) => {
             if (!containerRef.current) return;
